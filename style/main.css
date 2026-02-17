@@ -55,14 +55,19 @@ body.peach {
   font-size: 15rem;
 }
 
-/* Lights Button */
+/* =========================
+   Lights Button Styling
+   ========================= */
+
 .lights-wrapper {
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 50% !important;
+  right: auto !important;
   transform: translateX(-50%);
   opacity: 0;
   pointer-events: none;
+  width: auto;
 }
 
 .lights-wrapper button {
@@ -71,7 +76,6 @@ body.peach {
   cursor: pointer;
 }
 
-/* Active */
 .lights-wrapper.active {
   opacity: 1;
   pointer-events: auto;

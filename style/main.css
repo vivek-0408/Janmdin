@@ -5,7 +5,7 @@ body {
   background-color: white;
 }
 
-body.peach {
+.peach-background {
   background-color: #ffcc99;
 }
 
@@ -17,8 +17,8 @@ body.peach {
   visibility: hidden;
 }
 
-/* Apply absolute positioning ONLY to content blocks */
-.container > div:not(.lights-wrapper) {
+/* Apply absolute positioning ONLY to animated text blocks */
+.container > div:not(.turn-on-lights-btn) {
   position: absolute;
   left: 0;
   right: 0;
@@ -31,6 +31,7 @@ body.peach {
 
 .two {
   font-size: 1.2rem;
+  font-weight: lighter;
 }
 
 .three {
@@ -38,9 +39,9 @@ body.peach {
 }
 
 .idea-3 strong {
+  border-radius: 3px;
   display: inline-block;
-  padding: 3px 6px;
-  border-radius: 4px;
+  padding: 3px 5px;
 }
 
 .idea-5 {
@@ -56,26 +57,26 @@ body.peach {
   font-size: 15rem;
 }
 
-/* =========================
-   Lights Button (CENTERED)
-   ========================= */
+/* ============================
+   TURN ON LIGHTS BUTTON (FIXED)
+   ============================ */
 
-.lights-wrapper {
+.turn-on-lights-btn {
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  pointer-events: none;
+  visibility: hidden;
 }
 
-.lights-wrapper button {
-  padding: 15px 30px;
+.turn-on-lights-btn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.turn-on-lights-btn button {
+  padding: 15px 32px;
   font-size: 1.3rem;
   cursor: pointer;
-}
-
-.lights-wrapper.active {
-  opacity: 1;
-  pointer-events: auto;
 }

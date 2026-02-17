@@ -1,326 +1,78 @@
-/* Styles for the layout and animations of the content */
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
-    background-color: white;
-  }
-  
-  .container {
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    position: relative;
-    visibility: hidden;
-  }
-  
-  .container > div {
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 20vh;
-  }
-  
-  .one {
-    font-size: 4.5rem;
-  }
-  
-  .two {
-    font-size: 1.2rem;
-    font-weight: lighter;
-  }
-  
-  .three {
-    font-size: 3rem;
-  }
-  
-  .five p {
-    font-size: 2rem;
-    left: 0;
-    position: absolute;
-    right: 0;
-  }
-  
-  .idea-3 strong {
-    border-radius: 3px;
-    display: inline-block;
-    padding: 3px 5px;
-  }
-  
-  .five .idea-5 {
-    font-size: 4rem;
-  }
-  
-  .idea-5 span, .idea-6 span, .wish-hbd span {
-    display: inline-block;
-  }
-  
-  .idea-6 span{
-    font-size: 15rem;
-  }
-  
-  .textbox {
-    font-size: 2rem;
-    opacity: 0;
-  }
-  
-  button {
-    font-size: 1.5rem;
-    padding: 10px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  button:focus {
-    outline: none;
-  }
-  
-  .turn-on-lights-btn {
-      /*position: absolute;
-      bottom: 30%; 
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0; 
-      visibility: hidden; 
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ffcc00;
-      color: white;
-      font-size: 1.5em;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-      z-index: 10;
-      transition: opacity 0.5s ease, visibility 0.5s ease;*/
-    
-    /*background-color: #04AA6D; /* Green */
-    border: none;
-    color: white;
-    opacity: 0; 
-    visibility: hidden;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-  
-  
-  .turn-on-lights-btn.visible {
-      opacity: 1; /* Make it visible */
-      visibility: visible;
-  }
-  
-  /* Decoration Button */
-  .decoration-container {
-      /*position: absolute;
-      bottom: 20%;
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0;
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ffcc00;
-      color: white;
-      font-size: 1.5em;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);*/
-    /*background-color: #04AA6D; /* Green */
-    border: none;
-    color: white;
-    opacity: 0; 
-    visibility: hidden;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-  .decoration-container.visible {
-      opacity: 1; /* Make it visible */
-      visibility: visible;
-  }
-  
-  /* Music Button */
-  .music-btn-container {
-      /*position: absolute;
-      bottom: 20%;
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0;
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ffcc00;
-      color: white;
-      font-size: 1.5em;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);*/
-    /*background-color: #04AA6D; /* Green */
-    border: none;
-    color: white;
-    opacity: 0; 
-    visibility: hidden;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-  
-  /* Cake Button */
-  .cake-btn-container {
-      /*position: absolute;
-      bottom: 20%;
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0;
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ffcc00;
-      color: white;
-      font-size: 1.5em;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);*/
-  /*background-color: #04AA6D; /* Green */
-    border: none;
-    color: white;
-    opacity: 0; 
-    visibility: hidden;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-  
-  /* Restart Button */
-  .restart-btn-container {
-      /*position: absolute;
-      bottom: 20%;
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0;
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ffcc00;
-      color: white;
-      font-size: 1.5em;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);*/
-       background-color: #04AA6D; /* Green */
-    border: none;
-    color: white;
-    opacity: 0; 
-    visibility: hidden;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-  
-  /* Peach background color */
-  .peach-background {
-      background-color: #ffcc99;
-  }
-  
-  /* Decoration Image */
-  #decorationImage {
-      position: absolute;
-      left: 50%;
-      top: 15%;
-      transform: translateX(-50%);
-      opacity: 0;
-      width: 200px;
-      height: auto;
-      z-index: 10;
-  }
-  
-  /* Cake Image */
-  #cakeImage {
-      position: absolute;
-      left: 50%;
-      bottom: 20%;
-      transform: translateX(-50%);
-      opacity: 0;
-      width: 250px;
-      height: auto;
-      z-index: 10;
-  }
-  
-  /* Balloons */
-  .balloons {
-      position: absolute;
-      width: 50px;
-      height: 70px;
-      opacity: 0;
-      animation: float 3s infinite linear;
-  }
-  
-  @keyframes float {
-      0% {
-          transform: translateY(0);
-      }
-      100% {
-          transform: translateY(-600px);
-      }
-  }
-  
-  /* Final textbox */
-  .nine {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 20px;
-      width: 80%;
-      text-align: center;
-      background-color: white;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
-      opacity: 0;
-      font-size: 1.5em;
-      color: #333;
-  }
-  
-  /* SVG Circles */
-  .svg-circles-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-      opacity: 0;
-  }
-  
-  .svg-circle {
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.5);
-      animation: glow 2s infinite ease-in-out;
-  }
-  
-  @keyframes glow {
-      0% {
-          transform: scale(0.5);
-          opacity: 0;
-      }
-      50% {
-          transform: scale(1);
-          opacity: 1;
-      }
-      100% {
-          transform: scale(0.5);
-          opacity: 0;
-      }
-  }
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  background-color: white;
+}
+
+body.peach {
+  background-color: #ffcc99;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  position: relative;
+  visibility: hidden;
+}
+
+.container > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20vh;
+}
+
+.one {
+  font-size: 4.5rem;
+}
+
+.two {
+  font-size: 1.2rem;
+}
+
+.three {
+  font-size: 3rem;
+}
+
+.idea-3 strong {
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.idea-5 {
+  font-size: 4rem;
+}
+
+.idea-5 span,
+.idea-6 span {
+  display: inline-block;
+}
+
+.idea-6 span {
+  font-size: 15rem;
+}
+
+/* Lights Button */
+.lights-wrapper {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lights-wrapper button {
+  padding: 15px 30px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* Active */
+.lights-wrapper.active {
+  opacity: 1;
+  pointer-events: auto;
+}

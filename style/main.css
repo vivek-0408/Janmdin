@@ -17,8 +17,10 @@ body {
   visibility: hidden;
 }
 
-/* Apply absolute positioning ONLY to animated text blocks */
-.container > div:not(.turn-on-lights-btn) {
+/* ONLY animated content blocks */
+.container > .one,
+.container > .three,
+.container > .five {
   position: absolute;
   left: 0;
   right: 0;
@@ -44,7 +46,7 @@ body {
   padding: 3px 5px;
 }
 
-.idea-5 {
+.five .idea-5 {
   font-size: 4rem;
 }
 
@@ -58,7 +60,7 @@ body {
 }
 
 /* ============================
-   TURN ON LIGHTS BUTTON (FIXED)
+   TURN ON LIGHTS BUTTON
    ============================ */
 
 .turn-on-lights-btn {

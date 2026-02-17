@@ -3,100 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <title>Happy Birthday!!! :)</title>
-  <!-- Google Font -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-  <!-- My Style -->
+
   <link rel="stylesheet" href="./style/main.css" />
 </head>
+
 <body>
   <div class="container">
-    <!-- Divs 1 to 5 for initial content -->
+
     <div class="one">
-            <h1 class="one">
-                Hi
-                <span id="name">Mansi</span>
-            </h1>
-            <p class="two" id="greetingText">Me is full excited!!</p>
-        </div>
+      <h1>Hi <span id="name">Mansi</span></h1>
+      <p class="two">Me is full excited!!</p>
+    </div>
 
-        <div class="three">
-            <p>It's your birthday!! YAYAY WOOHOOO :D</p>
-        </div>
-   
-     
+    <div class="three">
+      <p>It's your birthday!! YAYAY WOOHOOO :D</p>
+    </div>
+
     <div class="five">
-            <p class="idea-1">I was thinking what can I do to wish you</p>
-            <p class="idea-2">And I knew that</p>
-            <p class="idea-3">
-                I wanted to do something<br>
-                <strong>Special and Mast Mast</strong>
-                .
-            </p>
-            <p class="idea-4">Because,</p>
-            <p class="idea-5">
-                You are Special
-                <span>:)</span>
-            </p>
-            <p class="idea-6">
-                <span>S</span>
-                <span>O</span>
-            </p>
-        </div>
-
-    <!-- Buttons will appear dynamically here -->
-     <div class="turn-on-lights-btn">
-            <button id="turn-on-lights">Lights</button>
-        </div>
-
-        <!-- Decoration Button and Decoration Image -->
-        <div class="decoration-container">
-            <button id="decorateBtn">Let's Decorate</button>
-            <img src="./img/decoration.png" id="decorationImage" alt="Decoration">
-        </div>
-
-        <!-- Music Button -->
-        <div class="music-btn-container">
-            <button id="musicBtn">Play Music</button>
-        </div>
-
-        <!-- Cake Button -->
-        <div class="cake-btn-container">
-            <button id="cakeBtn">Let us cut the cake</button>
-            <img src="./img/cake.jpg" id="cakeImage"  alt="Cake">
-        </div>
-
-    <!-- Hidden content: Glowing circles, images, and final text box -->
- <div class="svg-circles-container">
-        <div class="svg-circle" style="top: 10%; left: 10%; width: 50px; height: 50px;"></div>
-        <div class="svg-circle" style="top: 30%; left: 50%; width: 70px; height: 70px;"></div>
-        <div class="svg-circle" style="top: 50%; left: 80%; width: 60px; height: 60px;"></div>
-        <div class="svg-circle" style="top: 70%; left: 20%; width: 80px; height: 80px;"></div>
-        <div class="svg-circle" style="top: 40%; left: 70%; width: 90px; height: 90px;"></div>
+      <p class="idea-1">I was thinking what can I do to wish you</p>
+      <p class="idea-2">And I knew that</p>
+      <p class="idea-3">
+        I wanted to do something<br>
+        <strong>Special and Mast Mast</strong>.
+      </p>
+      <p class="idea-4">Because,</p>
+      <p class="idea-5">
+        You are Special <span>:)</span>
+      </p>
+      <p class="idea-6">
+        <span>S</span><span>O</span>
+      </p>
     </div>
-    
-    <div class="nine">
-      <div id="finalTextbox" class="final-textbox" style="display: none;">
-        <h1>Happy Birthday to You</h1>
-        <p id="finalMessage">Enjoy your day Have fun</p>
-      </div>
+
+    <!-- Lights Button -->
+    <div class="lights-wrapper">
+      <button id="lightsBtn">Turn on the Lights (Click Me)</button>
     </div>
-    
-    <!-- Music -->
-    <audio id="bdsong" preload="auto" class="song" loop>
+
+    <audio id="bdsong" loop>
       <source src="./music/hbd.mpeg" type="audio/mp3">
     </audio>
+
   </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-<!-- Sweetalert -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script type="application/javascript" src="./script/main.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="./script/main.js"></script>
 </body>
-   
-
 </html>

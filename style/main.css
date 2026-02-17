@@ -17,7 +17,8 @@ body.peach {
   visibility: hidden;
 }
 
-.container > div {
+/* Apply absolute positioning ONLY to content blocks */
+.container > div:not(.lights-wrapper) {
   position: absolute;
   left: 0;
   right: 0;
@@ -56,18 +57,16 @@ body.peach {
 }
 
 /* =========================
-   Lights Button Styling
+   Lights Button (CENTERED)
    ========================= */
 
 .lights-wrapper {
   position: absolute;
   top: 60%;
-  left: 50% !important;
-  right: auto !important;
-  transform: translateX(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
   pointer-events: none;
-  width: auto;
 }
 
 .lights-wrapper button {
